@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="box">
+        <div class="off_status"></div>
+        <div class="texts">
+            <a> LED </a>
+            {% if status == 1 %}
+                <a> ON </a>
+            {% else %}
+                <a> OFF </a>
+            {% endif %}
+        </div>
+        <div id="circle" class="button">
+            <a href="/ON" class="ciro"> ON </a>
+        </div>
+    </div>
+{% endblock %}

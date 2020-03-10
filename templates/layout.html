@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css?2" type="text/css" charset="utf-8"/>
+    {% if status == 1 %}
+        <title>LED ON</title>
+    {% else %}
+        <title>LED OFF</title>
+    {% endif %}
+</head>
+<body>
+    <header>
+        <h3> LED Control </h3>
+        <nav>
+            <ul>
+                <li><a href="/OFF" style="color: White"> MAIN </a></li>
+                <li><a href="/about" style="color: White"> ABOUT </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
